@@ -628,7 +628,7 @@ height: 16px; */
 .customers-item {
 display: flex;
 flex-wrap: wrap;
-width: calc((100%-16px) / 2);
+width: calc((100% - 16px)/ 2);
 height: 88px;
 }
 
