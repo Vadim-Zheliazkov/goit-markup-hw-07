@@ -231,9 +231,7 @@ margin-right: 24px;
 
 /**** < / FOOTER > ****/
 
-.container-footer {
-   
-}
+
 .footer-mobile-logo-and-text {
 margin: 0;
 }
@@ -263,7 +261,6 @@ margin: 0;
 
 .container-footer {
    flex-direction: row;
-   margin-left: 156px;
    gap: 80px;
 }
 

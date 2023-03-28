@@ -267,7 +267,6 @@ img {
     padding-top: 80px;
     padding-bottom: 40px;
     background-color: rgba(255, 255, 255, 0.9);
-
    
     position: absolute;
     z-index: 10;
@@ -275,8 +274,10 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: scroll;  
-     
+
+    
 }
+
 
 .js-menu-container {
     opacity: 0;
@@ -291,6 +292,7 @@ img {
     pointer-events: auto;
     transition: opacity 1500ms liner, visibility 1500ms liner;
     }
+
 
 .button-menu-icon {
 display: flex;
@@ -346,16 +348,30 @@ display: flex;
 flex-direction: column;
 gap: 40px;
 margin-bottom: 48px;
-    
-        }
+            }
+
+
+
+@media screen and (min-width: 428px), (max-width: 480px) {
+    .contacs-mobile .link-tel {
+    font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 428px) {
 .contacs-mobile .link-tel {
-color: #4D5AE5;
- font-weight: 700px;
 font-size: 24px;
+    
+        }   
+        }
+
+
+.contacs-mobile .link-tel {
+ font-weight: 700px;
+color: #4D5AE5;
 line-height: 1.11;
 letter-spacing: 0.02em;
-    
-        }
+}
     
 .mobile-social-links {
  display: flex;
@@ -606,13 +622,16 @@ height: 16px; */
     row-gap: 72px;
     flex-wrap: wrap;
     justify-content: center;
+   
 }
 
 .customers-item {
-    display: flex;
-    width: 136px;
-    height: 88px;
+display: flex;
+flex-wrap: wrap;
+width: calc((100%-16px) / 2);
+height: 88px;
 }
+
 
 .customers-link {
     display: flex;
@@ -744,6 +763,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 16px;
+width: 100%;
 }
 
 .subscribe-titile {

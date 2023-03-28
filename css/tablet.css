@@ -211,7 +211,7 @@ flex-basis: calc((100% - 24px) / 2);
 .container-footer {
    display: flex;
    flex-direction: column;
-   margin-left: 108px;
+   
  }
 
  .input-email-footer {
@@ -221,7 +221,7 @@ flex-basis: calc((100% - 24px) / 2);
 .footer-mobile-logo-and-text {
     display: block;
     margin-right: 24px;
-
+    margin-left: 108px;
 }
 .social-media-title{
 display: block;
@@ -246,7 +246,11 @@ margin-top: 17px;
  .conteiner-for-tablet-footer {
  display: flex;
  align-self: start;
+ 
   
+ }
+ .subscribe {
+    margin-left: 108px;
  }
 
  }
