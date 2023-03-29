@@ -240,6 +240,11 @@ img {
 
     /* Mobile-Menu */
 
+.burger-icon{
+fill: #2E2F42;
+background-color: #FFFFFF;
+}
+
 .backshadow {
     position: fixed;
     left: 0;
@@ -258,7 +263,7 @@ img {
 .container-mobile-menu {
     
     width: 100%;
-    max-width: 428px;
+    max-width: 480px;
     border-color: rgba(46, 47, 66, 0.16);
     height: 100%;
     max-height: 796px;
@@ -266,7 +271,7 @@ img {
     padding-right: 35px;
     padding-top: 80px;
     padding-bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255);
    
     position: absolute;
     z-index: 10;
