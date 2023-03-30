@@ -266,5 +266,29 @@ margin: 0;
 
 /**** < / FOOTER > ****/
 
+  .item-list-product {
+      flex-basis: calc((100% - 48px) / 3);
+
+      max-width: 360px;
+
+  }
+
+.item-list-product:not(:nth-child(3n)) {
+       margin-right: 24px;
+}
+
+.item-list-product:not(:nth-last-child(-n+3)) {
+    margin-bottom: 48px;
+}
+.portfolio {
+    padding-top: 72px;
+    padding-bottom: 120px;
+}
+.second-menu-nav {
+
+   
+    margin-bottom: 72px;
+    
+}
 
 }
