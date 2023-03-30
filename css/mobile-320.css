@@ -80,7 +80,7 @@ img {
     font-style: normal;
 } */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 10px) {
 
     /**** < COMMON SET >****/
 
@@ -252,7 +252,7 @@ background-color: #FFFFFF;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
+    background-color: #FFFFFF;
        
     opacity: 0;
     visibility: hidden;
@@ -262,17 +262,17 @@ background-color: #FFFFFF;
 
 
 .container-mobile-menu {
-    
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
     width: 100%;
-    
-    border-color: rgba(46, 47, 66, 0.16);
     height: 100%;
-    max-height: 796px;
+    
     padding-left: 40px;
     padding-right: 35px;
     padding-top: 80px;
     padding-bottom: 40px;
-    background-color: rgba(255, 255, 255);
+    
    
     position: absolute;
     z-index: 10;
@@ -280,6 +280,7 @@ background-color: #FFFFFF;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: scroll;  
+    
 
     
 }
@@ -320,30 +321,32 @@ right: 24px;
 fill: #2E2F42;
         }
     
-.mobile-pages {
+/* .mobile-pages {
  margin-bottom: 284px;
- }
-    
-.mobile-pages-list {
- font-weight: 700;
- font-size: 36px;
+ } */
+
+ 
+
+ 
+.pages-list{
+font-weight: 700;
+font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
-color: #2E2F42;    
-        }
-    
+color: #2E2F42;
+}
+
+
+ 
+
 .mobile-pages-list:not(:last-child) {
  margin-bottom: 40px;
         }
     
-.mobile-pages-list:last-child {
+.mobile-pages-list:last-child .pages-list{
 color: var(--color-activation-nav);
         }
     
-        /* .mobile-pages-list:hover {
-        color: var(--color-activation-nav);
-    
-    } */
     
 .contacs-mobile .link {
 color: var(--second-color-text);
@@ -364,24 +367,27 @@ margin-bottom: 48px;
     }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 479px) {
 .contacs-mobile .link-tel {
-font-size: 24px;
-    
-        }   
-        }
+font-size: 24px;}
+
+
+ }
 
 
 .contacs-mobile .link-tel {
- font-weight: 700px;
-color: #4D5AE5;
+ font-weight: 700;
+ 
+
 line-height: 1.11;
 letter-spacing: 0.02em;
+color: #4D5AE5;
+
 }
     
 .mobile-social-links {
  display: flex;
-gap: 40px;
+gap: 35px;
 justify-content: start;
     
         }
@@ -513,8 +519,17 @@ color: var(--second-color-text);
 
 /****SECTION 3 OUR TEAM ****/
 
+/* .our-team {
+width: 100%;
+} */
+.photo-employees{
+width: 100%;
+height: auto;
+}
+
 .employees-card {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
 }
 
 .section-our-team {
@@ -527,6 +542,8 @@ color: var(--second-color-text);
 .our-team-title {
     text-align: center;
 }
+
+
 
 .text.job-title {
     font-weight: 400;
@@ -542,6 +559,8 @@ color: var(--second-color-text);
         gap: 72px;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: auto;
 
     }
 }
@@ -578,8 +597,9 @@ color: var(--second-color-text);
 .social-list-employees {
     display: flex;
     margin-top: 8px;
-    gap: 24px;
+    justify-content: space-between;
 }
+
 
 .social-list-employees-item {
     display: flex;
@@ -679,7 +699,8 @@ height: 88px;
  
 /****FOOTER ****/
 .text-footer {
-    width: 264px;
+    width: 100%;
+    max-width: 264px;
 }
 
 .section-footer {
@@ -780,7 +801,7 @@ margin-bottom: 16px;
  .input-email-footer {
      height: 40px;
      width: 100%;
-     min-width: 264px;
+    
      border: 1px solid #FFFFFF;
      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
      border-radius: 4px;
@@ -803,21 +824,20 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 }
-
-.img-portfolio {
-width: 100%;
-height: auto;
-}
     
 .item-list-product {
 max-width: 396px;
 width: 100%;
-height: auto;    
+  
 transition-property: box-shadow;
 transition-duration: 250ms;
 transition-timing-function: var(--timing-function);
   }
-
+  
+.img-portfolio {
+width: 100%;
+height: auto;
+}
 
 @media screen and (max-width: 767px) {
  .item-list-product:not(:last-child)  
@@ -1159,6 +1179,13 @@ opacity: 1;
  }
     .card-subtitle {
         margin-bottom: 8px;
+    }
+
+    .card-text {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
     }
 
  

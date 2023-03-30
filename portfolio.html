@@ -49,6 +49,8 @@
 			</div>
 		</header>
 
+		<!-- </ HEADER > -->
+
 		<main>
 			<!-- Section 1 links+photo-->
 			<section class="section portfolio">
@@ -91,7 +93,7 @@
 										<source
 											srcset="./images/portfolio/mobile-img1-1x.webp 1x, ./images/portfolio/mobile-img1@2x.webp 2x"
 											media="(min-width: 480px)"
-											type="/image/webp"
+											type="image/webp"
 										/>
 										<source
 											srcset="./images/portfolio/mobile-img1-1x.jpg 1x, ./images/portfolio/mobile-img1@2x.jpg 2x"
@@ -646,88 +648,63 @@
 		</footer>
 		<!--</ FOOTER >-->
 
-		<!-- BACKDROP -->
+		<!--< MOBILE-MENU> -->
 
-		<div class="backdrop is-hidden" data-modal>
-			<div class="modal">
-				<button type="button" class="close-button" data-modal-close>
-					<svg class="close-x" width="8" height="8">
+		<div class="backshadow js-menu-container">
+			<div class="container-mobile-menu">
+				<button type="button" class="button-menu-icon js-close-menu">
+					<svg class="icon-cross-close-mobile-menu" width="8" height="8">
 						<use href="./images/symbol-defs.svg#icon-x"></use>
 					</svg>
 				</button>
-
-				<!-- / BACKDROP -->
-
-				<!-- FORM ORDER IN MODAL -->
-
-				<p class="text-title-modal">Leave your contacts and we will call you back</p>
-				<form class="form-order">
-					<div class="conteiner-label">
-						<label for="id-name"><span class="line-name">Name</span> </label>
-						<div class="input-for-icon"
-							><input class="border-input" type="text" name="name" id="id-name" required />
-
-							<svg class="icon-name">
-								<use href="./images/symbol-defs.svg#icon-name" width="12" height="12"></use>
-							</svg>
-						</div>
-					</div>
-
-					<div class="conteiner-label">
-						<label for="id-phone"><span class="line-name">Name</span> </label>
-						<div class="input-for-icon"
-							><input class="border-input" type="tel" name="phone" id="id-phone" required />
-
-							<svg class="icon-name">
-								<use href="./images/symbol-defs.svg#icon-phone" width="12" height="12"></use>
-							</svg>
-						</div>
-					</div>
-					<div class="conteiner-label">
-						<label for="id-email"><span class="line-name">Name</span> </label>
-						<div class="input-for-icon"
-							><input class="border-input" type="email" name="e-mail" id="id-email" required />
-
-							<svg class="icon-name">
-								<use href="./images/symbol-defs.svg#icon-e-mail" width="12" height="12"></use>
-							</svg>
-						</div>
-					</div>
-
-					<!-- / FORM ORDER IN MODAL -->
-
-					<!-- COMMENT -->
-
-					<div class="conteiner-label-comment">
-						<label for="id-comment" class="comment"> <span class="line-name"> Comment</span></label>
-						<textarea class="field-for-text" name="comment" id="id-comment" placeholder="Text input"></textarea>
-					</div>
-
-					<!-- / COMMENT -->
-
-					<!-- CHECKBOX -->
-
-					<div class="container-checkbox">
-						<input class="input-checkbox visually-hidden" type="checkbox" name="accept" id="id-accept" value="accept" />
-						<label class="lable-chekbox" for="id-accept"
-							><span class="text-accept">
-								I accept the terms and conditions of the
-								<span> <a class="text-accept-link" href="">Privacy Policy</a></span></span
-							></label
-						>
-					</div>
-
-					<!-- / CHECKBOX -->
-
-					<!-- BUTTON SEND-->
-
-					<button type="submit" class="button-send">Send</button>
-				</form>
+				<ul class="mobile-pages list">
+					<li class="mobile-pages-list"> <a class="link pages-list" href="./index.html">Studio</a> </li>
+					<li class="mobile-pages-list"> <a class="link pages-list" href="./portfolio.html">Portfolio</a></li>
+					<li class="mobile-pages-list"><a class="link pages-list" href="">Contacts</a></li>
+				</ul>
+				<div>
+					<ul class="contacs-mobile list">
+						<li> <a href="tel:+110001111111" class="link link-tel">+11 (000) 111-11-11</a> </li
+						><li>
+							<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+						</li>
+					</ul>
+					<ul class="mobile-social-links list">
+						<li>
+							<a class="link mobile-social-icon" href="">
+								<svg class="mobile-social" width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="link mobile-social-icon" href="">
+								<svg class="mobile-social" width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="link mobile-social-icon" href="">
+								<svg class="mobile-social" width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a class="link mobile-social-icon" href="">
+								<svg class="mobile-social" width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
-		<!-- / BUTTON SEND-->
+		<!--</ MOBILE-MENU> -->
+
 		<script src="./js/mobile-menu.js"></script>
-		<script src="./js/modal.js"></script>
 	</body>
 </html>

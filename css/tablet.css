@@ -221,7 +221,7 @@ flex-basis: calc((100% - 24px) / 2);
 .footer-mobile-logo-and-text {
     display: block;
     margin-right: 24px;
-    margin-left: 92px;
+    margin-left: 108px;
 }
 .social-media-title{
 display: block;
@@ -265,7 +265,11 @@ margin-top: 17px;
     .item-list-product:not(:nth-child(2n)) {
      margin-right: 24px;
  }
+ .item-list-product:not(:last-child) {
+    margin-bottom: 72px;
+ }
  .portfolio {
+
      padding-top: 64px;
      padding-bottom: 96px;
  }

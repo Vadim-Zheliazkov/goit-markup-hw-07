@@ -116,7 +116,7 @@ gap: 40px;
 }
 
 .list-item {
-    margin-bottom: 0;
+    margin-bottom: 8px;
     width: 264px;
     height: 112px;
 }
@@ -140,7 +140,8 @@ letter-spacing: 0.02em;
 }
 
 .text-advanteges {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
