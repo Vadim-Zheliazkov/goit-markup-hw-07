@@ -325,7 +325,7 @@ fill: #2E2F42;
  margin-bottom: 284px;
  } */
 
- 
+
 
  
 .pages-list{
@@ -336,16 +336,17 @@ letter-spacing: 0.02em;
 color: #2E2F42;
 }
 
-
+.active-mobile-menu {
+color: var(--color-activation-nav);}
  
 
 .mobile-pages-list:not(:last-child) {
  margin-bottom: 40px;
         }
     
-.mobile-pages-list:last-child .pages-list{
+/* .mobile-pages-list:last-child .pages-list{
 color: var(--color-activation-nav);
-        }
+        } */
     
     
 .contacs-mobile .link {
@@ -417,6 +418,7 @@ font-weight: 700;
  font-size: 32px;
 line-height: 1.11;
 letter-spacing: 0.02em;
+
         
 margin-bottom: 72px;
         
@@ -474,7 +476,8 @@ display: none;
 
 .subtitle-advanteges{
     
-text-align: center;font-weight: 700;  
+text-align: center;
+font-weight: 700;  
 font-size: 36px;
 line-height: 1.11;
   
@@ -487,7 +490,7 @@ font-size: 16px;
 line-height: 1.5;
 font-weight: 500;
 letter-spacing: 0.02em;
-
+white-space: normal ;
 color: var(--second-color-text);
 
 }
