@@ -80,6 +80,10 @@ img {
     font-style: normal;
 } */
 
+
+
+
+
 @media screen and (min-width: 10px) {
 
     /**** < COMMON SET >****/
@@ -254,10 +258,13 @@ background-color: #FFFFFF;
     height: 100%;
     background-color: #FFFFFF;
        
-    opacity: 0;
+   
     visibility: hidden;
     pointer-events: none;
-    transition: opacity 500ms liner, visibility 500ms liner;
+    
+    transition-duration: 350ms;
+    transition-timing-function: var(--timing-function);
+    
    }
 
 
@@ -280,7 +287,7 @@ background-color: #FFFFFF;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow-y: scroll;  
-    
+   
 
     
 }
@@ -297,7 +304,7 @@ background-color: #FFFFFF;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transition: opacity 1500ms liner, visibility 1500ms liner;
+    
     }
 
 
@@ -421,9 +428,7 @@ letter-spacing: 0.02em;
 
         
 margin-bottom: 72px;
-        
-width: 300px;
-height: 80px;
+ 
 text-align: center;
 margin-left: auto;
 margin-right: auto;                  
